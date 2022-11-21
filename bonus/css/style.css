@@ -1,10 +1,19 @@
+body{
+    overflow-x: hidden !important;
+}
+
 /* header */
 header{  
     background-color: #c61c05;
 }
 /* main */
-main > section:nth-child(even){
+main > section:nth-child(odd){
     background-color: #bfbec0;
+}
+
+.jumbotron{
+    width: 100%;
+    opacity: .4;
 }
 /* my-classes */
 .my-img{
@@ -12,9 +21,31 @@ main > section:nth-child(even){
     object-fit: cover;
     object-position: center;
 }
+.my-title{
+    top: 50%;
+    left: 50%;
+}
+.my-arrow{
+    left: 50%;
+    font-size: 3rem;
+    animation: fade-out-in 3s ease-in-out alternate infinite;
+}
 .my-pb2{
     padding-bottom: 24px;
 }
 .my-card-title-bg{
     background-color: #3e8fc3;
+}
+
+@keyframes fade-out-in {
+    from{
+        opacity: 1;
+        -webkit-opacity: 1;
+        -moz-opacity: 1;
+    }
+    to{
+        opacity: 0;
+        -webkit-opacity: 0;
+        -moz-opacity: 0;
+    }
 }
