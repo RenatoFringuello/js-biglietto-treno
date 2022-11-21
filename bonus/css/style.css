@@ -1,0 +1,20 @@
+/* header */
+header{  
+    background-color: #c61c05;
+}
+/* main */
+main > section:nth-child(even){
+    background-color: #bfbec0;
+}
+/* my-classes */
+.my-img{
+    height: 260px !important;
+    object-fit: cover;
+    object-position: center;
+}
+.my-pb2{
+    padding-bottom: 24px;
+}
+.my-card-title-bg{
+    background-color: #3e8fc3;
+}
